@@ -203,10 +203,9 @@ a:hover {
         opacity: 1
     }
 }
-/* The Close Button */
 
 .close {
-    color: #5EB4E3;
+    /* color: #5EB4E3; */
     float: right;
     font-size: 20px;
     font-weight: bold;
