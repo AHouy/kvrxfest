@@ -1,87 +1,76 @@
-/*!
- * Start Bootstrap - The Big Picture (https://startbootstrap.com/template-overviews/the-big-picture)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
- */
-
-    <style>   
-
- .wrapper {
-  display: flex;  
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: left;
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: left;
 }
-
 .wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
+    padding: 10px;
+    flex: 1 100%;
 }
-
-.left {
-  text-align: left;
-  position: sticky;
-  position: -webkit-sticky; /* Safari */
-  top: 0;
-}
-
 .right {
-  height: 95vh;
-  margin-top: 5vh;
+    margin-top: 5vh;
 }
-
-@media all and (min-width: 600px) {
-  .aside { flex: 1 0 0; }
+@media all and (min-width: 767px) {
+    .aside {
+        flex: 1 0 0;
+    }
+    .main {
+        flex: 3 0px;
+    }
+    .left {
+        order: 1;
+        flex: 0 0 5em;
+    }
+    .right {
+        order: 3;
+    }
 }
-
-@media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
-  .left { order: 1;
-  flex: 0 0 5em; } 
-  .right { order: 3; }
-}
-
 body {
-  background-color: #DBB9D6;
-  background-image: url("http://i68.tinypic.com/23kfdag.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 2em; 
+    background-color: #DBB9D6;
+    background-image: url("http://i68.tinypic.com/23kfdag.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 2em;
+    padding-bottom:56px;
 }
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     #disappear {
         display: none;
     }
 }
-  
 p.a {
-  color: black; 
-	font-size: 2em; 
-	text-decoration: none; 
-	font-weight: 150;
-	align: left; 
-	margin-left: .5em;
-	font-family: 'Helvetica Neue LT Pro','Helvetica Neue',Arial,sans-serif
-	line-height: 50px; 
-}
-
-p.b {
-  font-size: 1em;
-  font-color: #000;
-  line-height: 1em;
-  font-weight: 400;
-  margin-bottom: 0em;
-  font-family: 'Helvetica Neue LT Pro','Helvetica Neue',Arial,sans-serif;
-}
-
-
-h1 { 
-    display: block;
-    font-family: "Helvetica Neue LT Pro","Helvetica Neue",Arial,sans-serif
+    color: black;
     font-size: 2em;
-    line-height:.756;
-    color:black;
+    text-decoration: none;
+    font-weight: 150;
+    align: left;
+    margin-left: .5em;
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif line-height: 50px;
+}
+p.b {
+    font-size: 1em;
+    font-color: #000;
+    line-height: 1em;
+    font-weight: 400;
+    margin-bottom: 0em;
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+p.subhead {
+    color: black;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: 150;
+    align: left;
+    text-transform: uppercase;
+    margin-left: .5em;
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif margin-top: 10px;
+}
+h1 {
+    display: block;
+    font-family: "Helvetica Neue LT Pro", "Helvetica Neue", Arial, sans-serif font-size: 2em;
+    line-height: .756;
+    color: black;
     text-align: left;
     margin-top: 0em;
     margin-bottom: 0.3em;
@@ -89,68 +78,190 @@ h1 {
     margin-right: 0;
     font-weight: bold;
 }
-
-h2 { 
+h2 {
     display: block;
-    font-family: "Helvetica Neue LT Pro","Helvetica Neue",Arial,sans-serif
-    font-size: 2em;
-    font-weight:bold;
-    line-height:.85;
-    color:black;
-    background-color:white;
-    text-align: left;
-    position: sticky;
- 	position: -webkit-sticky; /* Safari */
- 	top: 30px;
-    padding-bottom: 30px;
-}
-
-h3 { 
-    display: block;
-    font-family: "Helvetica Neue LT Pro","Helvetica Neue",Arial,sans-serif
+    font-family: "Helvetica Neue LT Pro", "Helvetica Neue", Arial, sans-serif;
     font-size: 1.7em;
-    font-weight:bold;
-    line-height:.756;
-    color:white;
-    background-color:#5EB4E3;
+    font-weight: bold;
+    line-height: .756;
+    color: white;
+    background-color: #5EB4E3;
     text-align: left;
- 	top: 30px;
+    top: 30px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 10px;
 }
-
+h3 {
+    display: block;
+    font-family: "Helvetica Neue LT Pro", "Helvetica Neue", Arial, sans-serif font-size: 2em;
+    font-weight: bold;
+    line-height: .85;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #5EB4E3;
+    padding: 20px 20px 20px;
+}
 #kvrxfest {
-  border: 1px solid;
-  background-color: #DBB9D6;
-  padding: 15px 20px 15px 20px;
-  box-shadow: 6px 6px #FAD800;
-}
-    </style>
-    
-  <div class="wrapper">
- 
-  <div class="left">
-  <div id="kvrxfest">
-  <a href="index.html"><h1>KVRX FEST</h1></a>
-  <div id="disappear"><p class="b">May 10-11th<br>
-    Austin, TX  </p></div>
-  </div>
-  </div>
-  
- <style>
-
-a.artist { 
-	color: black; 
-	font-size: 4em; 
-	text-decoration: none; 
-	align: left; 
-	margin-left: .5em;
-	font-family: 'Helvetica Neue LT Pro','Helvetica Neue',Arial,sans-serif
+    border: 1px solid;
+    background-color: #DBB9D6;
+    padding: 15px 20px 15px 20px;
+    box-shadow: 6px 6px #FAD800;
+    position: sticky;
+    position: -webkit-sticky;
+    top:42px;
 }
 
-a:hover { 
-	color: #ED5464; 
-	text-decoration: none; 
+.fa:hover {
+    opacity: 0.7;
 }
- </style>
+.fa {
+    padding: 20px;
+    width: 50px;
+    text-decoration: none;
+    background: transparent;
+    color: white;
+}
+#socials {
+    /* padding: 20px 30px 50px 30px; */
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+a.artist {
+    color: black;
+    font-size: 4em;
+    text-decoration: none;
+    align: left;
+    margin-left: .5em;
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif
+}
+a:link, a:visited {
+    color: #ED5464;
+    /* color: #5EB4E3; */
+    text-decoration: none;
+}
+a:hover {
+    color: #ED5464;
+    text-decoration: none;
+}
+
+.modal {
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* Modal Content */
+
+.modal-content {
+    background-color: #DBB9D6;
+    padding: 10px;
+    border: 5px solid #5EB4E3;
+    /* width: 80%; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+/* The Close Button */
+
+.close {
+    color: #5EB4E3;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-body {
+    background-color: #DBB9D6;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+.modal-button {
+    background-color: transparent;
+    /* Green */
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif;
+    width: 100%;
+}
+.modal-button:hover {
+    background-color: #5EB4E3;
+    color: white;
+}
+
+.hvr-shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #e1e1e1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2098D1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: white;
+  }
+  .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
