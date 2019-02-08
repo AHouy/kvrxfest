@@ -34,11 +34,11 @@ body {
     padding: 2em;
     padding-bottom:56px;
 }
-@media only screen and (max-width: 768px) {
-    #disappear {
-        display: none;
-    }
+
+p.a, p.b, p.subhead, h1, h2, h3, a.artist, .modal-button, a.more {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif;
 }
+
 p.a {
     color: black;
     font-size: 2em;
@@ -46,7 +46,7 @@ p.a {
     font-weight: 150;
     align: left;
     margin-left: .5em;
-    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif line-height: 50px;
+    line-height: 50px;
 }
 p.b {
     font-size: 1em;
@@ -54,7 +54,6 @@ p.b {
     line-height: 1em;
     font-weight: 400;
     margin-bottom: 0em;
-    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif;
 }
 p.subhead {
     color: black;
@@ -64,11 +63,11 @@ p.subhead {
     align: left;
     text-transform: uppercase;
     margin-left: .5em;
-    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif margin-top: 10px;
+    margin-top: 10px;
 }
 h1 {
     display: block;
-    font-family: "Helvetica Neue LT Pro", "Helvetica Neue", Arial, sans-serif font-size: 2em;
+    /* font-size: 2em; */
     line-height: .756;
     color: black;
     text-align: left;
@@ -80,8 +79,7 @@ h1 {
 }
 h2 {
     display: block;
-    font-family: "Helvetica Neue LT Pro", "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.7em;
+    /* font-size: 1.7em; */
     font-weight: bold;
     line-height: .756;
     color: white;
@@ -94,14 +92,17 @@ h2 {
 }
 h3 {
     display: block;
-    font-family: "Helvetica Neue LT Pro", "Helvetica Neue", Arial, sans-serif font-size: 2em;
+    /* font-size: 2em; */
     font-weight: bold;
     line-height: .85;
     color: black;
     text-transform: uppercase;
     text-align: left;
     background-color: #5EB4E3;
-    padding: 20px 20px 20px;
+    padding: 10px 20px;
+}
+h3.faq-header {
+    margin-left:.5em
 }
 #kvrxfest {
     border: 1px solid;
@@ -129,22 +130,37 @@ h3 {
     text-align: center;
     font-size: 40px;
 }
-a.artist {
-    color: black;
-    font-size: 4em;
-    text-decoration: none;
-    align: left;
-    margin-left: .5em;
-    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif
+.nav-link {
+    font-size:14pt;
 }
 a:link, a:visited {
     color: #ED5464;
     /* color: #5EB4E3; */
     text-decoration: none;
 }
+a.artist { 
+	color: black; 
+	font-size: 4em; 
+	text-decoration: none; 
+	font-weight: bold;
+	text-transform: uppercase;
+    margin-left: .5em;
+    padding-bottom: 20px;
+}
+a.more {
+    color: black; 
+    font-size: 2em; 
+    text-decoration: none; 
+    font-weight: 150;
+    margin-left: .5em;
+    line-height: 50px; 
+}
 a:hover {
-    color: #ED5464;
+    color: #5EB4E3;
     text-decoration: none;
+}
+.artist:hover {
+    color:#ED5464
 }
 
 .modal {
@@ -217,12 +233,24 @@ a:hover {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2em;
-    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Arial, sans-serif;
     width: 100%;
 }
 .modal-button:hover {
     background-color: #5EB4E3;
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    #disappear {
+        display: none;
+    }
+    h2 {
+        line-height:normal;
+    }
+    a.artist {
+        margin-left:.25em;
+        font-size:1.75em;
+    }
 }
 
 .hvr-shutter-out-horizontal {
