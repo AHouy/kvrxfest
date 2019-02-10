@@ -7,38 +7,38 @@
 
     <title>Lineup | KVRX Fest</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link href="css/the-big-picture.css" rel="stylesheet">
+    <link href="/css/the-big-picture.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #ED5464;">
-        <div class="container">
+        <div class="container text-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand d-md-none" style="display:none" href="/">KVRX FEST</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">ABOUT</a>
+                        <a class="nav-link" href="/about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="lineup.html">LINEUP</a>
+                        <a class="nav-link" href="/lineup">LINEUP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="schedule.html">SCHEDULE</a>
+                        <a class="nav-link" href="/schedule">SCHEDULE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                        <a class="nav-link" href="/FAQ">FAQ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://kvrxfest.eventbrite.com">BUY TICKETS →</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
@@ -46,7 +46,7 @@
     <div class="wrapper">
         <aside class="aside left">
             <div id="kvrxfest">
-                <a href="index.html">
+                <a href="/">
                     <h1>KVRX FEST</h1>
                 </a>
                 <div id="disappear">
@@ -59,13 +59,14 @@
         <aside class="aside right">
             <h2>LINEUP</h2>
             <i>* Austin artist</i>
-            <button class="modal-button hvr-shutter-out-horizontal" href="#myModal1">Frankie Cosmos</button>
+            <button class="modal-button hvr-shutter-out-horizontal" data-toggle="modal" data-target="#myModal1">Frankie Cosmos</button>
             <div id="myModal1" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Frankie Cosmos
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://ingridsuperstar.bandcamp.com/" class="lineup-artist" target="_blank">Frankie Cosmos</a>
                             </h3>
                             <center>
                                 <img src="http://i68.tinypic.com/2zpi0ds.png" class="img-fluid">
@@ -84,13 +85,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal4">Palm</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal4">Palm</button>
             <div id="myModal4" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Palm
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://palmnewyork.bandcamp.com/" class="lineup-artist" target="_blank">Palm</a>
                             </h3>
                             <center>
                                 <img src="http://i66.tinypic.com/23m7ads.png" class="img-fluid">
@@ -105,13 +107,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal2">Drab Majesty</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal2">Drab Majesty</button>
             <div id="myModal2" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Drab Majesty
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://drabmajesty.bandcamp.com/" class="lineup-artist" target="_blank">Drab Majesty</a>
                             </h3>
                             <center>
                                 <img src="http://i67.tinypic.com/ob07c9.png" class="img-fluid">
@@ -128,13 +131,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal3">Fat Tony</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal3">Fat Tony</button>
             <div id="myModal3" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Fat Tony
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://fattonyrap.bandcamp.com/" class="lineup-artist" target="_blank">Fat Tony</a>
                             </h3>
                             <center>
                                 <img src="http://i66.tinypic.com/soqv46.png" class="img-fluid">
@@ -151,13 +155,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal5">Abhi the Nomad*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal5">Abhi the Nomad*</button>
             <div id="myModal5" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Abhi the Nomad
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://abhithenomad.bandcamp.com/" class="lineup-artist" target="_blank">Abhi the Nomad</a>
                             </h3>
                             <center>
                                 <img src="http://i66.tinypic.com/ofu4xd.png" class="img-fluid">
@@ -175,13 +180,15 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal6">Omni</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal6">Omni</button>
             <div id="myModal6" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Omni
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://open.spotify.com/artist/4wBhllC5Nto10UefzXVMt9?si=VHiFodIYTRKq5PvlO4JpFQ" class="lineup-artist"
+                                    target="_blank">Omni</a>
                             </h3>
                             <center>
                                 <img src="http://i64.tinypic.com/1zewqp.png" class="img-fluid">
@@ -197,13 +204,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal7">Video Age</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal7">Video Age</button>
             <div id="myModal7" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Video Age
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://videoage.bandcamp.com/" class="lineup-artist" target="_blank">Video Age</a>
                             </h3>
                             <center>
                                 <img src="http://i68.tinypic.com/2ptvyuu.png" class="img-fluid">
@@ -219,13 +227,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal8">Sexy Dex and the Fresh</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal8">Sexy Dex and the Fresh</button>
             <div id="myModal8" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Sexy Dex and the Fresh
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://sexydex.bandcamp.com/" class="lineup-artist" target="_blank">Sexy Dex and the Fresh</a>
                             </h3>
                             <center>
                                 <img src="http://i63.tinypic.com/sl21du.png" class="img-fluid">
@@ -242,13 +251,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal9">Mamalarky</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal9">Mamalarky</button>
             <div id="myModal9" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Mamalarky
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://mamalarky.bandcamp.com/" class="lineup-artist" target="_blank">Mamalarky</a>
                             </h3>
                             <center>
                                 <img src="http://i65.tinypic.com/20g1kxl.png" class="img-fluid">
@@ -266,13 +276,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal10">Why Bonnie*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal10">Why Bonnie*</button>
             <div id="myModal10" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Why Bonnie
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://whybonnie.bandcamp.com/" class="lineup-artist" target="_blank">Why Bonnie</a>
                             </h3>
                             <center>
                                 <img src="http://i67.tinypic.com/o8dyqe.png" class="img-fluid">
@@ -287,13 +298,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal11">TC Superstar*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal11">TC Superstar*</button>
             <div id="myModal11" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>TC Superstar
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://tcsuperstar.bandcamp.com/" class="lineup-artist" target="_blank">TC Superstar</a>
                             </h3>
                             <center>
                                 <img src="http://i65.tinypic.com/211ufyx.png" class="img-fluid">
@@ -310,13 +322,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal12">Blushing*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal12">Blushing*</button>
             <div id="myModal12" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Blushing
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://weareblushing.bandcamp.com/" class="lineup-artist" target="_blank">Blushing</a>
                             </h3>
                             <center>
                                 <img src="http://i66.tinypic.com/24v2lci.png" class="img-fluid">
@@ -331,13 +344,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal13">Xetas*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal13">Xetas*</button>
             <div id="myModal13" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Xetas
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://xetas.bandcamp.com/" class="lineup-artist" target="_blank">Xetas</a>
                             </h3>
                             <center>
                                 <img src="http://i65.tinypic.com/350tauh.png" title="PC: @boredan" class="img-fluid">
@@ -352,13 +366,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal14">Caroline Says*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal14">Caroline Says*</button>
             <div id="myModal14" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Caroline Says
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://carolinesays.bandcamp.com/" class="lineup-artist" target="_blank">Caroline Says</a>
                             </h3>
                             <center>
                                 <img src="http://i64.tinypic.com/b4es6x.png" class="img-fluid">
@@ -373,13 +388,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal15">Smiile*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal15">Smiile*</button>
             <div id="myModal15" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Smiile
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://smiilemusic.bandcamp.com/" class="lineup-artist" target="_blank">Smiile</a>
                             </h3>
                             <center>
                                 <img src="http://i64.tinypic.com/29fox2t.png" class="img-fluid">
@@ -397,13 +413,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal16">Dezorah</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal16">Dezorah</button>
             <div id="myModal16" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Dezorah
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://dezorah.bandcamp.com/" class="lineup-artist" target="_blank">Dezorah</a>
                             </h3>
                             <center>
                                 <img src="http://i63.tinypic.com/2ep4nsm.png" class="img-fluid">
@@ -420,13 +437,15 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal17">Mike Melinoe*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal17">Mike Melinoe*</button>
             <div id="myModal17" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Mike Melinoe
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://open.spotify.com/artist/5ISrbWev5rYZj1wOAvEycb?si=5CDOg_UWRUmDd_77fOZyqg" class="lineup-artist"
+                                    target="_blank">Mike Melinoe</a>
                             </h3>
                             <center>
                                 <img src="http://i65.tinypic.com/21b8z14.jpg" class="img-fluid">
@@ -445,13 +464,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal18">Ama*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal18">Ama*</button>
             <div id="myModal18" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Ama
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                Ama
                             </h3>
                             <center>
                                 <img src="http://i68.tinypic.com/11a9z43.png" class="img-fluid">
@@ -466,13 +486,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal19">Indoor Creature*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal19">Indoor Creature*</button>
             <div id="myModal19" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Indoor Creature
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://indoorcreature.bandcamp.com/" class="lineup-artist" target="_blank">Indoor Creature</a>
                             </h3>
                             <center>
                                 <img src="http://i68.tinypic.com/mmseno.png" class="img-fluid">
@@ -488,13 +509,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal20">Pleasure Venom*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal20">Pleasure Venom*</button>
             <div id="myModal20" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Pleasure Venom
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://pleasurevenom.bandcamp.com/" class="lineup-artist" target="_blank">Pleasure Venom</a>
                             </h3>
                             <center>
                                 <img src="http://i64.tinypic.com/25utb7s.png" class="img-fluid">
@@ -510,13 +532,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal21">Alexalone*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal21">Alexalone*</button>
             <div id="myModal21" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Alexalone
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://alexalone.bandcamp.com/" class="lineup-artist" target="_blank">Alexalone</a>
                             </h3>
                             <center>
                                 <img src="http://i64.tinypic.com/2wfnsyt.png" class="img-fluid">
@@ -531,13 +554,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal22">Sad Cops</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal22">Sad Cops</button>
             <div id="myModal22" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Sad Cops
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://sadcopstx.bandcamp.com/" class="lineup-artist" target="_blank">Sad Cops</a>
                             </h3>
                             <center>
                                 <img src="http://i66.tinypic.com/12663hy.png" class="img-fluid">
@@ -553,13 +577,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal23">Pearl Earl</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal23">Pearl Earl</button>
             <div id="myModal23" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Pearl Earl
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://pearlearl.bandcamp.com/" class="lineup-artist" target="_blank">Pearl Earl</a>
                             </h3>
                             <center>
                                 <img src="http://i67.tinypic.com/1z6z7ec.png" class="img-fluid">
@@ -574,13 +599,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal24">Daphne Tunes*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal24">Daphne Tunes*</button>
             <div id="myModal24" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Daphne Tunes
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://daphne.bandcamp.com/" class="lineup-artist" target="_blank">Daphne Tunes</a>
                             </h3>
                             <center>
                                 <img src="http://i68.tinypic.com/k3aav4.png" class="img-fluid">
@@ -595,13 +621,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal25">Little Mazarn*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal25">Little Mazarn*</button>
             <div id="myModal25" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Little Mazarn
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://littlemazarn.bandcamp.com/" class="lineup-artist" target="_blank">Little Mazarn</a>
                             </h3>
                             <center>
                                 <img src="http://i64.tinypic.com/nbugr6.png" class="img-fluid">
@@ -618,13 +645,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal26">Vonne*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal26">Vonne*</button>
             <div id="myModal26" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Vonne
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://vonnemusic.bandcamp.com/" class="lineup-artist" target="_blank">Vonne</a>
                             </h3>
                             <center>
                                 <img src="http://i65.tinypic.com/wbv4ts.png" class="img-fluid">
@@ -639,13 +667,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal27">Hey Cowboy!</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal27">Hey Cowboy!</button>
             <div id="myModal27" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Hey Cowboy!
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://heycowboy.bandcamp.com/" class="lineup-artist" target="_blank">Hey Cowboy!</a>
                             </h3>
                             <center>
                                 <img src="http://i67.tinypic.com/1zx0buw.png" class="img-fluid">
@@ -659,13 +688,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal28">Being Dead*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal28">Being Dead*</button>
             <div id="myModal28" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Being Dead
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://beingdead.bandcamp.com/" class="lineup-artist" target="_blank">Being Dead</a>
                             </h3>
                             <center>
                                 <img src="http://i67.tinypic.com/2e4ykrc.png" class="img-fluid">
@@ -679,13 +709,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal29">Street Sects*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal29">Street Sects*</button>
             <div id="myModal29" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Street Sects
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://streetsects.bandcamp.com/" class="lineup-artist" target="_blank">Street Sects</a>
                             </h3>
                             <center>
                                 <img src="http://i67.tinypic.com/344719y.png" class="img-fluid">
@@ -700,13 +731,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal30">Ex Romantika*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal30">Ex Romantika*</button>
             <div id="myModal30" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Ex Romantika
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://exromantika.bandcamp.com/" class="lineup-artist" target="_blank">Ex Romantika</a>
                             </h3>
                             <center>
                                 <img src="http://i64.tinypic.com/6t1oix.png" class="img-fluid">
@@ -722,13 +754,13 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal31">Van Mary*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal31">Van Mary*</button>
             <div id="myModal31" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Van Mary
-                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h3><a href="https://vanmary.bandcamp.com/" class="lineup-artist" target="_blank">Van Mary</a>
                             </h3>
                             <center>
                                 <img src="http://i65.tinypic.com/v665ac.png" title="PC: @j_a_k_e_m_i_l_e_s" class="img-fluid">
@@ -744,13 +776,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal32">Chucky Blk*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal32">Chucky Blk*</button>
             <div id="myModal32" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Chucky Blk
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://chuckyblk.bandcamp.com/" class="lineup-artist" target="_blank">Chucky Blk</a>
                             </h3>
                             <center>
                                 <img src="http://i63.tinypic.com/x5z70w.png" class="img-fluid">
@@ -765,13 +798,15 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal33">Big Wy's Brass Band*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal33">Big Wy's Brass Band*</button>
             <div id="myModal33" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Big Wy's Brass Band
+                            <h3>
+                                <a href="https://open.spotify.com/artist/6uK6dRy1FD8vt1bU8pU9QK?si=gICzdRrCSlm2S-25cB3HhQ" class="lineup-artist"
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                    target="_blank">Big Wy's Brass Band</a>
                             </h3>
                             <center>
                                 <img src="http://i65.tinypic.com/2epk19w.png" class="img-fluid">
@@ -786,13 +821,15 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal34">Jay Wile</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal34">Jay Wile</button>
             <div id="myModal34" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Jay Wile
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://open.spotify.com/artist/1VvjB8ztJLmmj2fyL4TkCU?si=JSQ0a_CaTk2VkUPiMxmAyA" class="lineup-artist"
+                                target="_blank">Jay Wile</a>
                             </h3>
                             <center>
                                 <img src="http://i65.tinypic.com/xndu2a.png" class="img-fluid">
@@ -806,13 +843,15 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal35">Light Horse Harry*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal35">Light Horse Harry*</button>
             <div id="myModal35" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Light Horse Harry
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://open.spotify.com/artist/5SK7ljbhFPXSaFFb7L33o8?si=x5e7hhPtTr-B8YygmNpmvA" class="lineup-artist"
+                                    target="_blank">Light Horse Harry</a>
                             </h3>
                             <center>
                                 <img src="http://i65.tinypic.com/w98ubo.png" class="img-fluid">
@@ -828,13 +867,15 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal36">Hot Mom*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal36">Hot Mom*</button>
             <div id="myModal36" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Hot Mom
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://open.spotify.com/artist/6mNPeu9v7En1oA8bKVyOah?si=rcU6urBPSimI4_ucTMtmPA" class="lineup-artist"
+                                    target="_blank">Hot Mom</a>
                             </h3>
                             <center>
                                 <img src="http://i68.tinypic.com/2zel3wm.png" class="img-fluid">
@@ -850,13 +891,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal37">Fishing in Japan</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal37">Fishing in Japan</button>
             <div id="myModal37" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Fishing in Japan
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                <a href="https://fishinginjapan.bandcamp.com/" class="lineup-artist" target="_blank">Fishing in Japan</a>
                             </h3>
                             <center>
                                 <img src="http://i68.tinypic.com/nvxqtt.png" class="img-fluid">
@@ -871,13 +913,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal38">Nevil</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal38">Nevil</button>
             <div id="myModal38" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Nevil
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                Nevil
                             </h3>
                             <center>
                                 <img src="http://i64.tinypic.com/2nb6br7.png" class="img-fluid">
@@ -892,13 +935,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal39">Lainey Gonzales*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal39">Lainey Gonzales*</button>
             <div id="myModal39" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>Lainey Gonzales
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                Lainey Gonzales
                             </h3>
                             <center>
                                 <img src="http://i68.tinypic.com/291hjxg.png" class="img-fluid">
@@ -912,13 +956,14 @@
                 </div>
             </div>
 
-            <button class="modal-button" href="#myModal40">Cement*</button>
+            <button class="modal-button" data-toggle="modal" data-target="#myModal40">Cement*</button>
             <div id="myModal40" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h3>cement
+                            <h3>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
+                                cement
                             </h3>
                             <center>
                                 <img src="http://i66.tinypic.com/2e0uteb.png" class="img-fluid">
@@ -942,45 +987,9 @@
         </aside>
     </div>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <script>
-        // Get the button that opens the modal
-        var btn = document.querySelectorAll("button.modal-button");
-
-        // All page modals
-        var modals = document.querySelectorAll('.modal');
-
-        // Get the <span> element that closes the modal
-        var spans = document.getElementsByClassName("close");
-
-        // When the user clicks the button, open the modal
-        for (var i = 0; i < btn.length; i++) {
-            btn[i].onclick = function (e) {
-                e.preventDefault();
-                modal = document.querySelector(e.target.getAttribute("href"));
-                modal.style.display = "block";
-            }
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        for (var i = 0; i < spans.length; i++) {
-            spans[i].onclick = function () {
-                for (var index in modals) {
-                    if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-                }
-            }
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target.classList.contains('modal')) {
-                for (var index in modals) {
-                    if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-                }
-            }
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="/js/navbrand.js"></script>
 </body>
 
 </html>

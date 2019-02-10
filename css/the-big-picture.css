@@ -1,3 +1,7 @@
+@media (max-width: 768px) {
+.navbar-brand
+    {/*         position: absolute; *//* top:0; *//* left: 50%; */transform: translateX(-25%); margin:0 auto;}
+}
 .wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -159,7 +163,10 @@ a:hover {
     color: #5EB4E3;
     text-decoration: none;
 }
-.artist:hover {
+a.lineup-artist {
+    color:black
+}
+.artist:hover, a.lineup-artist:hover {
     color:#ED5464
 }
 
